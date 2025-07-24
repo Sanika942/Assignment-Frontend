@@ -16,13 +16,22 @@ function Header({ name }) {
         }}
       >
         <CardBody>
-          <Row className="align-items-center">
-            <Col xs="6">
-              <h3 style={{ marginTop: "-40px" }} className="mb-0 ms-2">
+          <Row
+            className="align-items-center text-center text-md-start"
+            style={{
+              maxWidth: "95%",
+              marginTop: "20px",
+              position: "relative",
+              zIndex: 10,
+            }}
+          >
+            <Col xs="12" md="6">
+              <h3 style={{ marginTop: "-40px" }} className="mb-0 ms-md-2">
                 &lt; {name}
               </h3>
             </Col>
-            <Col xs="6" className="text-center">
+
+            <Col xs="12" md="6" className="text-md-end mt-3 mt-md-0">
               <img
                 src={logo1}
                 alt="Logo"

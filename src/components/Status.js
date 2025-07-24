@@ -36,53 +36,49 @@ function Status() {
   }, []);
 
   return (
-    <Container
-      fluid
-      className="mt-4 px-0"
-      style={{ paddingLeft: "12px", paddingRight: "12px" }}
-    >
+    <Container fluid className="px-0 mt-3">
       {loading ? (
         <div className="text-center">
           <Spinner color="primary" />
         </div>
       ) : (
-        <Row className="gx-4 gy-3">
-          <Col xs="12" style={{ width: "20%" }}>
+        <Row className="gx-3 gy-3">
+          <Col xs="12" sm="6" md="4" lg="3" xl="2">
             <Card className="shadow-sm text-center">
               <CardBody>
-                <CardTitle tag="h5">Total Projects</CardTitle>
+                <CardTitle tag="h6">Total Projects</CardTitle>
                 <h3>{counters.totalProjects}</h3>
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" style={{ width: "20%" }}>
+          <Col xs="12" sm="6" md="4" lg="3" xl="2">
             <Card className="shadow-sm text-center">
               <CardBody>
-                <CardTitle tag="h5">Closed</CardTitle>
+                <CardTitle tag="h6">Closed</CardTitle>
                 <h3>{counters.closedProjects}</h3>
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" style={{ width: "20%" }}>
+          <Col xs="12" sm="6" md="4" lg="3" xl="2">
             <Card className="shadow-sm text-center">
               <CardBody>
-                <CardTitle tag="h5">Running</CardTitle>
+                <CardTitle tag="h6">Running</CardTitle>
                 <h3>{counters.runningProjects}</h3>
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" style={{ width: "20%" }}>
+          <Col xs="12" sm="6" md="4" lg="3" xl="2">
             <Card className="shadow-sm text-center">
               <CardBody>
-                <CardTitle tag="h5">Delayed</CardTitle>
+                <CardTitle tag="h6">Delayed</CardTitle>
                 <h3>{counters.delayedProjects}</h3>
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" style={{ width: "20%" }}>
+          <Col xs="12" sm="6" md="4" lg="3" xl="2">
             <Card className="shadow-sm text-center">
               <CardBody>
-                <CardTitle tag="h5">Cancelled</CardTitle>
+                <CardTitle tag="h6">Cancelled</CardTitle>
                 <h3>{counters.cancelledProjects}</h3>
               </CardBody>
             </Card>
